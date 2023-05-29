@@ -1,24 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
+  font-family: "Poppins", sans-serif;
   height: 100vh;
 }
 .App {
+  border-radius: 0.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 10rem auto;
-  width: fit-content;
-  /* box-shadow: 1px 1px; */
-  z-index: 9;
+  width: 40rem;
+  min-height: 20rem;
+  text-align: center;
+}
+h1 {
+  padding: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: rgb(67, 83, 177);
+  color: white;
+}
+.form {
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1rem;
+}
+.form input {
+  width: 20em;
+  border-right: none;
+  border: 1px solid rgb(67, 83, 177);
+  padding: 0.5rem;
+  border-bottom-left-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+}
+.form button {
+  border: none;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  padding: 0.55rem;
+  color: white;
+  background-color: rgb(67, 83, 177);
 }
 .single-todo {
+  border: none;
+  border-bottom: 1px solid gray;
+  margin: 0 auto;
+  width: 30rem;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
-  border: 1px solid gray;
-  border-radius: 0.4rem;
+  padding: 0.5rem 0;
 }
 .single-todo > * {
   margin: 0 1rem;
+}
+.check-and-task {
+  display: flex;
+}
+.check-and-task input {
+  margin: 0 1rem 0 0;
+}
+.trash {
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+}
+.fa-solid {
+  color: red;
 }

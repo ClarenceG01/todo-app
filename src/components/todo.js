@@ -46,9 +46,11 @@ const Todo = () => {
       </form>
       {todos.map((todo, index) => (
         <div className="single-todo" key={index}>
-          <input type="checkbox" name="" id="" />
-          <h4>{todo}</h4>
-          <button onClick={handleDelete}>
+          <div className="check-and-task">
+            <input type="checkbox" name="" id="" />
+            <h4>{todo}</h4>
+          </div>
+          <button onClick={handleDelete} className="trash">
             <i className="fa-solid fa-trash"></i>
           </button>
         </div>

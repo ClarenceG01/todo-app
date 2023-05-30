@@ -16,6 +16,7 @@ body {
   width: 40rem;
   min-height: 20rem;
   text-align: center;
+  padding: 0 0 4rem 0;
 }
 h1 {
   padding: 0.5rem;

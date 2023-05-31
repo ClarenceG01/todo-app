@@ -31,6 +31,7 @@ const Todo = () => {
       return updatedTodos;
     });
   }
+
   return (
     <div className="todos">
       <form className="form" onSubmit={handleTask}>
@@ -41,13 +42,14 @@ const Todo = () => {
           value={task}
           placeholder="Enter Task"
           onChange={(e) => setTask(e.target.value)}
+          required
         />
         <button type="submit">Add</button>
       </form>
       {todos.map((todo, index) => (
         <div className="single-todo" key={index}>
           <div className="check-and-task">
-            <input type="checkbox" name="" id="" />
+            <input type="checkbox" name="" id="check" />
             <h4>{todo}</h4>
           </div>
           <button onClick={handleDelete} className="trash">

@@ -64,6 +64,10 @@ h1 {
 .check-and-task input {
   margin: 0 1rem 0 0;
 }
+.check-and-task input:checked + h4 {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
 .trash {
   cursor: pointer;
   border: none;
